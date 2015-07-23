@@ -1,0 +1,47 @@
+[
+  {
+    "request": {
+      "uri": "/session",
+      "method": "post",
+      "forms": {
+        "username": "test1",
+        "password": "Passw0rd123"
+      }
+    },
+    "response": {
+      "file": {
+        "name": "login_successfully.response"
+      }
+    }
+  },
+  {
+    "request": {
+      "uri": "/session",
+      "method": "post",
+      "forms": {
+        "username": "test1",
+        "password": "wrong_password"
+      }
+    },
+    "response": {
+      "file": {
+        "name": "invalid_user.response"
+      }
+    }
+  },
+  {
+    "request": {
+      "uri": "/session",
+      "method": "post",
+      "forms": {
+        "username": "test2",
+        "password": "Passw0rd123"
+      }
+    },
+    "response": {
+      "file": {
+        "name": "blocked_user.response"
+      }
+    }
+  }
+]
